@@ -142,7 +142,7 @@ course we do realize that you may have more complex routines to do that, be we'l
 
 <div class="highlight">
 <pre><span class="cp">&lt;?php</span>
-    <span class="nx">aop_add_before</span><span class="p">(</span><span class="s1">'MyServices::doAdmin*'</span><span class="p">,</span> <span class="s1">'adviceForDoAdmin'</span><span class="p">);</span>
+    <span class="nx">aop_add_before</span><span class="p">(</span><span class="s1">'MyServices->doAdmin*()'</span><span class="p">,</span> <span class="s1">'adviceForDoAdmin'</span><span class="p">);</span>
 </pre>
 </div>
 
@@ -209,7 +209,7 @@ a method of a given object or a closure.</p>
 
 <p>In PHP's AOP extension, pointcuts can be configured with a quite simple and straightforward syntax.</p>
 
-<p>In our first example the pointcut was "MyServices::doAdmin*" and was configured to launch the advice "before" the
+<p>In our first example the pointcut was "MyServices->doAdmin*()" and was configured to launch the advice "before" the
 execution of the matching methods join points.</p>
 
 <h2>Why or should I use AOP?</h2>
